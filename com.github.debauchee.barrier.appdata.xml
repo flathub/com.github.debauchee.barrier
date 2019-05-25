@@ -3,7 +3,7 @@
   <id>com.github.debauchee.barrier</id>
   <metadata_license>CC0-1.0</metadata_license>
   <name>Barrier</name>
-  <summary>Open-source KVM software</summary>
+  <summary>Barrier - Share mouse and keyboard over the local network</summary>
   <description>
     <p>What is it?</p>
     <p>Barrier is KVM software forked from Symless's synergy 1.9 codebase. Synergy was a commercialized reimplementation of the original CosmoSynergy written by Chris Schoeneman.</p>
