@@ -23,6 +23,26 @@
     ],
     "modules" : [
         {
+            "name": "openssl",
+            "buildsystem": "simple",
+            "build-commands": [
+                "./config --prefix=/app",
+                "make",
+                "make install"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://www.openssl.org/source/openssl-1.1.1c.tar.gz",
+                    "sha256": "f6fb3079ad15076154eda9413fed42877d668e7069d9b87396d0804fdb3f4c90"
+                }
+            ],
+            "cleanup": [
+                "/share/doc",
+                "/share/man"
+            ]
+        },
+        {
             "name" : "avahi",
             "config-opts" : [
                 "--disable-libdaemon",
