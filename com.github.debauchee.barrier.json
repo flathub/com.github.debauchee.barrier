@@ -81,8 +81,8 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/debauchee/barrier.git",
-                    "tag" : "v2.3.0",
-                    "commit" : "8e8b38b493d031f5007bebc44e8f767482e41fb6"
+                    "tag" : "v2.3.1",
+                    "commit" : "58d8f020dcbe9b7bb38b76994a064756b3c3b455"
                 },
                 {
                     "type" : "file",
