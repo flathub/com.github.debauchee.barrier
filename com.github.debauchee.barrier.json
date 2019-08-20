@@ -77,9 +77,6 @@
         {
             "name" : "barrier",
             "buildsystem" : "cmake-ninja",
-            "config-opts": [
-                "-DCMAKE_BUILD_TYPE=Release"
-            ],
             "sources" : [
                 {
                     "type" : "git",
