@@ -1,7 +1,7 @@
 {
     "app-id" : "com.github.debauchee.barrier",
     "runtime" : "org.kde.Platform",
-    "runtime-version" : "5.12",
+    "runtime-version" : "5.13",
     "sdk" : "org.kde.Sdk",
     "command" : "barrier",
     "rename-icon" : "barrier",
@@ -22,6 +22,7 @@
         "*.a"
     ],
     "modules" : [
+        "shared-modules/intltool/intltool-0.51.json",
         {
             "name": "openssl",
             "buildsystem": "simple",
@@ -33,8 +34,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.openssl.org/source/openssl-1.1.1c.tar.gz",
-                    "sha256": "f6fb3079ad15076154eda9413fed42877d668e7069d9b87396d0804fdb3f4c90"
+                    "url": "https://github.com/openssl/openssl/archive/OpenSSL_1_1_1d.tar.gz",
+                    "sha256": "23011a5cc78e53d0dc98dfa608c51e72bcd350aa57df74c5d5574ba4ffb62e74"
                 }
             ],
             "cleanup": [
@@ -81,8 +82,8 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/debauchee/barrier.git",
-                    "tag" : "v2.3.1",
-                    "commit" : "58d8f020dcbe9b7bb38b76994a064756b3c3b455"
+                    "tag" : "v2.3.2",
+                    "commit" : "210c2b70bd7f666fa8b76b2f55e6935ce547558e"
                 },
                 {
                     "type" : "file",
