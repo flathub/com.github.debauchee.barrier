@@ -24,26 +24,6 @@
     "modules" : [
         "shared-modules/intltool/intltool-0.51.json",
         {
-            "name": "openssl",
-            "buildsystem": "simple",
-            "build-commands": [
-                "./config --prefix=/app",
-                "make",
-                "make install"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/openssl/openssl/archive/OpenSSL_1_1_1d.tar.gz",
-                    "sha256": "23011a5cc78e53d0dc98dfa608c51e72bcd350aa57df74c5d5574ba4ffb62e74"
-                }
-            ],
-            "cleanup": [
-                "/share/doc",
-                "/share/man"
-            ]
-        },
-        {
             "name" : "avahi",
             "config-opts" : [
                 "--disable-libdaemon",
