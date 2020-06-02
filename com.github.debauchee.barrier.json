@@ -10,7 +10,9 @@
         "--share=ipc",
         "--socket=x11",
         "--share=network",
+        "--own-name=org.kde.*",
         "--talk-name=org.a11y.*",
+        "--talk-name=org.kde.StatusNotifierWatcher",
         "--system-talk-name=org.freedesktop.Avahi",
         "--device=dri"
     ],
