@@ -1,7 +1,7 @@
 {
     "app-id" : "com.github.debauchee.barrier",
     "runtime" : "org.kde.Platform",
-    "runtime-version" : "5.14",
+    "runtime-version" : "5.13",
     "sdk" : "org.kde.Sdk",
     "command" : "barrier",
     "rename-icon" : "barrier",
@@ -10,9 +10,7 @@
         "--share=ipc",
         "--socket=x11",
         "--share=network",
-        "--own-name=org.kde.*",
         "--talk-name=org.a11y.*",
-        "--talk-name=org.kde.StatusNotifierWatcher",
         "--system-talk-name=org.freedesktop.Avahi",
         "--device=dri"
     ],
@@ -25,6 +23,26 @@
     ],
     "modules" : [
         "shared-modules/intltool/intltool-0.51.json",
+        {
+            "name": "openssl",
+            "buildsystem": "simple",
+            "build-commands": [
+                "./config --prefix=/app",
+                "make",
+                "make install"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/openssl/openssl/archive/OpenSSL_1_1_1g.tar.gz",
+                    "sha256": "281e4f13142b53657bd154481e18195b2d477572fdffa8ed1065f73ef5a19777"
+                }
+            ],
+            "cleanup": [
+                "/share/doc",
+                "/share/man"
+            ]
+        },
         {
             "name" : "avahi",
             "config-opts" : [
@@ -52,8 +70,8 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://github.com/lathiat/avahi/releases/download/v0.7/avahi-0.7.tar.gz",
-                    "sha256" : "57a99b5dfe7fdae794e3d1ee7a62973a368e91e414bd0dfa5d84434de5b14804"
+                    "url" : "https://github.com/lathiat/avahi/releases/download/v0.8/avahi-0.8.tar.gz",
+                    "sha256" : "060309d7a333d38d951bc27598c677af1796934dbd98e1024e7ad8de798fedda"
                 }
             ]
         },
@@ -64,8 +82,8 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/debauchee/barrier.git",
-                    "tag" : "v2.3.2",
-                    "commit" : "210c2b70bd7f666fa8b76b2f55e6935ce547558e"
+                    "tag" : "v2.3.3",
+                    "commit" : "3395cca9673b645ddce3bac9141f148752f9494c"
                 },
                 {
                     "type" : "file",
