@@ -1,0 +1,13 @@
+diff --git a/src/lib/base/Event.h b/src/lib/base/Event.h
+index 38a2cf11..cb00dccb 100644
+--- a/src/lib/base/Event.h
++++ b/src/lib/base/Event.h
+@@ -21,6 +21,8 @@
+ #include "common/basic_types.h"
+ #include "common/stdmap.h"
+
++#include <cstddef>
++
+ class EventData {
+ public:
+     EventData() { }

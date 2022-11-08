@@ -1,7 +1,7 @@
 {
     "app-id" : "com.github.debauchee.barrier",
     "runtime" : "org.kde.Platform",
-    "runtime-version" : "5.15-21.08",
+    "runtime-version" : "5.15-22.08",
     "sdk" : "org.kde.Sdk",
     "command" : "barrier",
     "rename-icon" : "barrier",
@@ -36,8 +36,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/openssl/openssl/archive/OpenSSL_1_1_1n.tar.gz",
-                    "sha256": "6b2d2440ced8c802aaa61475919f0870ec556694c466ebea460e35ea2b14839e"
+                    "url": "https://github.com/openssl/openssl/archive/OpenSSL_1_1_1s.tar.gz",
+                    "sha256": "0dc03a5842801884e25211d81f9fa8d2fce5aad6a9e996eac0deb68994a80243"
                 }
             ],
             "cleanup": [
@@ -97,8 +97,12 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/debauchee/barrier.git",
-                    "tag" : "v2.3.4",
-                    "commit" : "c43597c27a4e57b0b599d41360bc4d29bd7bfe48"
+                    "tag" : "v2.4.0",
+                    "commit" : "3e0d758b59e44e6bb8b5e13cf96c824be44207ac"
+                },
+                {
+                    "type" : "patch",
+                    "path" : "barrier_git_v2.4.0.patch"
                 },
                 {
                     "type" : "file",

@@ -24,6 +24,7 @@
   <launchable type="desktop-id">com.github.debauchee.barrier.desktop</launchable>
 
   <releases>
+    <release date="2022-11-08" version="2.4.0" urgency="medium" />
     <release date="2022-03-07" version="2.3.4" urgency="medium" />
     <release date="2020-07-14" version="2.3.3" urgency="medium" />
     <release date="2019-09-03" version="2.3.2" urgency="medium" />
@@ -55,7 +56,7 @@
     </screenshot>
   </screenshots>
 
-  <update_contact>barrier+flatpak@shymega.org.uk</update_contact>
+  <update_contact>miotk.mikolaj+flatpak-barrier@gmail.com</update_contact>
 
   <content_rating type="oars-1.1" />
 </component>
