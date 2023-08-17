@@ -37,7 +37,12 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/openssl/openssl/archive/OpenSSL_1_1_1s.tar.gz",
-                    "sha256": "0dc03a5842801884e25211d81f9fa8d2fce5aad6a9e996eac0deb68994a80243"
+                    "sha256": "0dc03a5842801884e25211d81f9fa8d2fce5aad6a9e996eac0deb68994a80243",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 20333,
+                        "url-template": "https://www.openssl.org/source/openssl-$version.tar.gz"
+                    }
                 }
             ],
             "cleanup": [
