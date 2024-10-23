@@ -40,7 +40,6 @@
   <developer_name>Siix</developer_name>
 
   <translation type="gettext">avahi</translation>
-  <launchable type="desktop-id">barrier.desktop</launchable>
 
   <screenshots>
     <screenshot type="default">
