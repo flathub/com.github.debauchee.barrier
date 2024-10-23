@@ -1,7 +1,7 @@
 {
     "app-id" : "com.github.debauchee.barrier",
     "runtime" : "org.kde.Platform",
-    "runtime-version" : "5.15-22.08",
+    "runtime-version" : "5.15-23.08",
     "sdk" : "org.kde.Sdk",
     "command" : "barrier",
     "rename-icon" : "barrier",
@@ -35,8 +35,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/openssl/openssl/archive/OpenSSL_1_1_1s.tar.gz",
-                    "sha256": "0dc03a5842801884e25211d81f9fa8d2fce5aad6a9e996eac0deb68994a80243"
+                    "url": "https://github.com/openssl/openssl/archive/OpenSSL_1_1_1w.tar.gz",
+                    "sha256": "2130e8c2fb3b79d1086186f78e59e8bc8d1a6aedf17ab3907f4cb9ae20918c41"
                 }
             ],
             "cleanup": [
