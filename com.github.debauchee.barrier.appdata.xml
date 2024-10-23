@@ -24,6 +24,7 @@
   <launchable type="desktop-id">com.github.debauchee.barrier.desktop</launchable>
 
   <releases>
+    <release date="2024-10-23" version="2.4.0-5.15-23.08" urgency="medium" />
     <release date="2022-11-08" version="2.4.0" urgency="medium" />
     <release date="2022-03-07" version="2.3.4" urgency="medium" />
     <release date="2020-07-14" version="2.3.3" urgency="medium" />
@@ -39,7 +40,6 @@
   <developer_name>Siix</developer_name>
 
   <translation type="gettext">avahi</translation>
-  <launchable type="desktop-id">barrier.desktop</launchable>
 
   <screenshots>
     <screenshot type="default">
