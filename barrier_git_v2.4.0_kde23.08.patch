@@ -1,0 +1,36 @@
+diff --git a/src/lib/base/String.h b/src/lib/base/String.h
+index 9c5a53ba..2ff2e349 100644
+--- a/src/lib/base/String.h
++++ b/src/lib/base/String.h
+@@ -21,6 +21,7 @@
+ #include "common/common.h"
+ #include "common/stdstring.h"
+ 
++#include <cstdint>
+ #include <stdarg.h>
+ #include <vector>
+ 
+diff --git a/src/lib/base/XBase.h b/src/lib/base/XBase.h
+index 0b467502..f6250de8 100644
+--- a/src/lib/base/XBase.h
++++ b/src/lib/base/XBase.h
+@@ -18,6 +18,7 @@
+ 
+ #pragma once
+ 
++#include <cstdint>
+ #include <stdexcept>
+ #include <string>
+ 
+diff --git a/src/lib/net/FingerprintData.h b/src/lib/net/FingerprintData.h
+index 938a6953..522a4813 100644
+--- a/src/lib/net/FingerprintData.h
++++ b/src/lib/net/FingerprintData.h
+@@ -18,6 +18,7 @@
+ #ifndef BARRIER_LIB_NET_FINGERPRINT_DATA_H
+ #define BARRIER_LIB_NET_FINGERPRINT_DATA_H
+ 
++#include <cstdint>
+ #include <string>
+ #include <vector>
+ 

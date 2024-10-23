@@ -104,6 +104,10 @@
                     "path" : "barrier_git_v2.4.0.patch"
                 },
                 {
+                    "type" : "patch",
+                    "path" : "barrier_git_v2.4.0_kde23.08.patch"
+                },
+                {
                     "type" : "file",
                     "path" : "com.github.debauchee.barrier.appdata.xml"
                 }
