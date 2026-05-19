@@ -1,7 +1,7 @@
 {
     "app-id" : "com.github.debauchee.barrier",
     "runtime" : "org.kde.Platform",
-    "runtime-version" : "5.15-23.08",
+    "runtime-version" : "5.15-25.08",
     "sdk" : "org.kde.Sdk",
     "command" : "barrier",
     "rename-icon" : "barrier",
@@ -92,6 +92,9 @@
         {
             "name" : "barrier",
             "buildsystem" : "cmake-ninja",
+            "config-opts" : [
+                "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
+            ],
             "sources" : [
                 {
                     "type" : "git",
